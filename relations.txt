@@ -1,0 +1,47 @@
+create table clientrecord(Name varchar(40),`REG. NO` varchar(15) primary key, Status varchar(10), `D.O.B` date, Gender varchar(6), `Blood Group` varchar(10), `Contact Number` varchar(15), `Parent/Guardian` varchar(15), `Email-id` varchar(75), `Specific medical details` text);
+
+create table distribute(Patient_Id varchar(15), Prescription text);
+
+create table doctor(Name varchar(40),UserID varchar(15) primary key,Password text, `Email-Id` varchar(75),Date date,Time time,Speciality varchar(256),`Visiting Hours` text,Status tinyint(4));
+
+create table dressing(Name varchar(40),UserID varchar(15) primary key,Password text, `Email-Id` varchar(75),Date date,Time time);
+
+create table dressrec(Date date,Time time,Patient_ID varchar(15),Procedure_ text);
+
+create table dressstock(Name varchar(75),Type varchar(25),Supplier varchar(250), `Quantity Left` int,`Expiry Date` date);
+
+create table ecg(Date date,Time time,Patient_ID varchar(15));
+
+create table injection(Name varchar(40),UserID varchar(15) primary key,Password text, `Email-Id` varchar(75),Date date,Time time);
+
+create table injectrec(Date date,Time time,Patient_ID varchar(15),Injection text);
+
+create table injectstock(Name varchar(75),Type varchar(25),Supplier varchar(250), `Quantity Left` int,`Expiry Date` date);
+
+create table laboratory(Name varchar(40),UserID varchar(15) primary key,Password text, `Email-Id` varchar(75),Date date,Time time);
+
+create table labrecord(Patient_ID varchar(15),Prescription text);
+
+create table labstock(Name varchar(75),Type varchar(25),Supplier varchar(250), `Quantity Left` int,`Expiry Date` date);
+
+create table medicine(Name varchar(75) primary key,Type varchar(25));
+
+create table medicine1(Name varchar(75) primary key,Type varchar(25));
+
+create table medicine2(Name varchar(75) primary key,Type varchar(25));
+
+create table medicine3(Name varchar(75) primary key,Type varchar(25));
+
+create table medicinerecord(Date date,Time time,`REG.No` varchar(15),Medicine varchar(75), `Quantity` int,Starting_Balance int);
+
+create table patientrecord(Date date,Time time,`REG.No` varchar(15), Consulted Varchar(15), Reason text,Prescription text,Remarks Text,type smallint());
+
+create table patients(Date date,Time time,Patient_ID varchar(15), Patient_Name varchar(40), Concerned_Doctor varchar(15),Reason text);
+
+create table pharmacist(Name varchar(40),UserID varchar(15) primary key,Password text, `Email-Id` varchar(75),Date date,Time time);
+
+create table physiotherapy(Date date,Time time,Patient_ID varchar(15));
+
+create table receptionist(Name varchar(40),UserID varchar(15) primary key,Password text, `Email-Id` varchar(75),Date date,Time time);
+
+create table stock(Name varchar(75),Type varchar(25),Supplier varchar(250), `Quantity Left` int,`Expiry Date` date);

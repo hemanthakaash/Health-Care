@@ -1,0 +1,66 @@
+<html>
+<head>
+	<title> REGISTRATION DESK</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="HealthCare Database">
+	<meta name="description" content="Medical Transactions">	
+	<link href="style.css" rel="stylesheet"/>
+	<link href="title.png" rel="icon" type="image/png" />
+	<style>
+		label{
+			padding-bottom:10px;
+			font-size:21px;
+		}
+	</style>
+</head>
+<body>
+	<h1 class="head" align="center">Registeration form</h1><hr>
+	<div class="firstdiv" style="width:350px;">
+		<label for="Name" name="nam">Name : </label><br><br>
+		<label for="ID" >ID : </label><br><br>
+		<label for="status">Status : </label><br><br>
+		<label for="dob" >DOB : </label><br><br>
+		<label for="gender" >Gender :</label><br><br>
+		<label for="bg" style="padding-top:100px;">Blood Group : </label><br><br>
+		<label for="cn" >Contact Number : </label><br><br>
+		<label for="pg" >Parent/Guardian Contact Number : </label><br><br><br>
+		<label for="address">Address :</label><br><br><br><br	>
+		<label for="email" >Email-Id : </label><br><br><br>
+		<label for="allergy" >Particular Specific medical details : </label><br><br>
+	</div>
+	<form action="registeration.php" method="post">
+		<div style="seconddiv">
+			<input type="text" class="new" id="Name" name="name" required ><br><br>
+			<input type="number" class="new" id="ID" name="reg" required><br><br>
+			<select name="status" id="status" class="selectt" style="width:150px;">
+				<option value="Student">Student</option>
+				<option value="Staff">Staff</option>
+			</Select><br><br>
+			<input type="date" class="new" id="dob" name="dob" required> <br><br>
+			<select name="gender" id="gender" class="selectt" style="width:150px;">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</Select><br><br>
+			<input type="text" class="new" id="bg" name="bg" ><br><br>
+			<input type="text" class="new" id="cn" name="cn" ><br><br>
+			<input type="text" class="new" id="pg" name="pg" required><br><br>
+			<textarea class="new" style="height:100px;width:300px;" id="address" name="address" placeholder="Address" required ></textarea>
+			<br><br>
+			<input type="text" class="new" id="email" name="email"><br><br>
+			<textarea class="new" style="height:100px;width:300px;" id="allergy" name="allergy" placeholder="Any kind of allergic reaction to any substance - mention here"></textarea>
+			<br><br>
+		</div>
+		<div style="width:30%;">
+		<button type="submit" style="width:150px;height:50px;float:right;" name="sub">Register</button>
+		</div><br><br>
+	</form>	
+	<script>
+		var x=document.getElementsByClassName("new");
+		var i;
+		for(i=0;i<x.length;i++){
+			x[i].value="";
+		}
+	</script>
+</body>
+</html>

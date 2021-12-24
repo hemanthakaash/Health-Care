@@ -1,0 +1,246 @@
+body{
+	background-image:url("darkgreen.jpg");
+	background-size:cover;
+	color:white;
+}
+.hometext{
+	width:80%;
+	float:right;
+	color:#fff;
+	text-align:justify;
+	padding:10px;
+	line-height:21px;
+	word-spacing:8px;
+	font-size:19px;
+	font-family: "Comic-Sans MS";
+}
+.two{
+	position: relative;
+	display: inline;
+}
+.one{
+	display: none;
+	position: absolute;
+	padding: 35px 16px;
+	z-index: 1;
+}
+.test{
+	color:#EEEEEE;
+}
+.test:hover {
+	opacity:0.6;
+}
+.two:hover .one{
+	display:block;
+}
+#forpass{
+	display:none;
+}
+#cpd{
+	padding:15px;
+	width:26%;
+}
+#cpd label{
+	font-size:22px;
+	font-family:"Comic Sans MS";
+}
+#gen{
+	display:none;
+}
+.cph{
+	padding:15px;
+	width:35%;
+}
+.cph label{
+	font-size:22px;
+	font-family:"Comic Sans MS";
+}
+.l1{
+	font-size:22px;
+	font-family:"Comic Sans MS";
+}
+#cpd input{
+	width:250px;
+}
+.disco p{
+	color:lime;
+	font-size:23px;
+	font-weight:700;
+}
+hr{
+	height:5px;
+	background:#ccc;
+	border:0 none;
+}
+#fp:hover{
+	color:white;
+}
+.homebut{
+	width:15%;
+	text-align:center;
+	#padding:10px;
+	float:left;
+}
+.statbutton{
+	width:20%;
+	height:40px;
+	background-color:#999;
+	font-weight:600;
+}
+button{
+	height:30px;
+	width:120px;
+	border:none;
+	background:#909090;
+	font-weight:900;
+}
+.login{
+	width:45%;
+	height:50px;
+	margin:auto;
+}
+.selectt{
+	width:35%;
+	height:35px;
+}
+.firstdiv{
+	width:30%;
+	font-size:22px;
+	font-weight:900;
+	padding:10px 15px;
+	float:left;
+	clear:both;
+}
+label{
+	font-size:20px;
+}
+.recepbut{
+	height:45px;
+	background-color:#bbb;
+	float:left;
+}
+.recepbut:hover{
+	background-color:#999;
+}
+.seconddiv{
+	width:30%;
+	padding:10px;
+	float:left;
+}
+#stockenter input{
+	width:100%;
+}
+#firstcon tr{
+	height:35px;
+}
+#patient_table button,#p_table button,#tabe button{
+	background-color:#b0f0b0;
+	padding:0px;
+	width:50%;
+}
+#patient_table button:hover,#p_table button:hover,#tabe button:hover{
+	opacity:.4;
+}
+.pharmatab{
+	 background-color:#909090;
+	 height:45px;
+	 margin:auto;
+}
+.pharmatab button{
+	height:45px;
+	width:100px;
+	float:left;
+}
+.report{
+	width:200px;
+	clear:both;
+}
+.report label{
+	float:right;
+}
+.head{
+	color:lime;
+	font-weight: bold;
+}
+.pharmatab button:hover{
+	background-color:#bbb;
+} 
+.tab{
+	background-color:#bbb;
+	height:45px;
+}
+tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+tr:hover{
+	background-color: #ddd;
+}
+.details{
+	width:50%;
+	background:#b0f0b0;
+	color:#000;
+}
+#uppat,#updoc,#disd,#disp{
+	display:none;
+}
+#disp,#disd label{
+	padding-left:10px;
+}
+input{
+	width:150px;
+	height:35px;
+}
+table{
+	width:50%;
+	border-collapse: collapse;
+}
+table,th,td{
+    text-align: left;
+    background-color: #b0f0b0;
+    color: black;
+	border:1px solid black;
+} 
+tr{
+	height:35px;
+}
+th,td{
+	padding:0px 15px;
+}
+.upload{
+	#background-color: #000;
+	float:right;
+	width:40%;
+	font-size:20px;
+}
+.sample{
+	width: 100%;
+	height: 100px;
+}
+#student_name{
+	font-family:"Courier New";
+	font-size:28px;
+}
+button:active {
+  background-color: #aaa;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.uploadbutton:active {
+  background-color: #999;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+button:hover{
+	opacity: 0.8;
+	border-radius: 5px;
+}
+.uploadbutton:hover{
+	opacity: 0.8;
+	border-radius: 5px;
+}
+#student table{
+	width:80%;
+}
+.th1{
+	padding:0px;
+}
